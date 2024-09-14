@@ -3,3 +3,5 @@ useRef
 useEffect
 useCallback
 useId
+useParams
+useLoaderData
