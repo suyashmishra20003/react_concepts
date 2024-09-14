@@ -19,6 +19,7 @@ function App() {
     }
 
     for (let i = 0; i <= length; i++) {
+      // console.log( Math.floor(Math.random() * (max - min + 1)) + min );
       let char = Math.floor(Math.random() * str.length + 1)
       pass = pass + str.charAt(char)
     }
