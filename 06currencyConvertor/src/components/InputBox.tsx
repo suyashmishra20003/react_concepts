@@ -65,10 +65,6 @@ function InputBox({
                         </option>
                   ))
                 }
-                <option value="usd">
-                    usd
-                </option>
-            
             </select>
         </div>
     </div>
