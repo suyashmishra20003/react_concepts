@@ -1,37 +1,37 @@
 import React, { useContext, useState } from 'react'
 import UserContext from '../context/userContext'
 function Login() {
-    const [username, setUsername] = useState(0)
-    const [password, setPassword] = useState(0)
+  const [username, setUsername] = useState(0)
+  const [password, setPassword] = useState(0)
 
-    const {setUser} = useContext(UserContext)
+  const { setUser } = useContext(UserContext)
 
-    const methodSubmit = () => {
-        setUser({username,password})
-    }
+  const methodSubmit = () => {
+    setUser({ username, password })
+  }
   return (
     <div>
-        <h2>Login </h2>
+      <h2>Login </h2>
 
-        <div className="w-full">
-        <input type="text" 
-        onChange={(e) => setUsername(e.target.value)} 
-        value={username}
-        placeholder="username" id="" />
+      <div className="w-full">
+        <input type="text"
+          onChange={(e) => setUsername(e.target.value)}
+          value={username}
+          placeholder="username" id="" />
 
-        </div>
+      </div>
 
-<hr />
-<br />
-        <div className="w-full">
+      <hr />
+      <br />
+      <div className="w-full">
         <input
-        onChange={(e) => setPassword(e.target.value)} 
-        value={password}
-         type="text" placeholder="password" id="" />
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
+          type="text" placeholder="password" id="" />
 
-        </div>
-        
-        <button onClick={() => methodSubmit()} type="button">Submit</button>
+      </div>
+
+      <button onClick={() => methodSubmit()} type="button">Submit</button>
     </div>
   )
 }
